@@ -1,0 +1,20 @@
+﻿<Window x:Class="RepuestosMSP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sistema Repuestos" Height="600" Width="1000">
+
+    <DockPanel>
+        <!-- Panel lateral de menú -->
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="#222">
+            <Button Content="Repuestos" Click="BtnRepuestos_Click" Margin="10" Height="40"/>
+            <Button Content="Clientes" Click="BtnClientes_Click" Margin="10" Height="40"/>
+            <Button Content="Ventas" Click="BtnVentas_Click" Margin="10" Height="40"/>
+            <Button Content="Proveedores" Click="BtnProveedores_Click" Margin="10" Height="40"/>
+            <Button Content="Categorías" Click="BtnCategorias_Click" Margin="10" Height="40"/>
+            <Button Content="Salir" Click="BtnSalir_Click" Margin="10" Height="40"/>
+        </StackPanel>
+
+        <!-- Área para mostrar vistas -->
+        <ContentControl x:Name="MainContent" />
+    </DockPanel>
+</Window>
